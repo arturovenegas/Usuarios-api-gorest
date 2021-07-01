@@ -1,0 +1,21 @@
+<div class="row d-flex justify-content-center" *ngIf = 'loading === true'>
+    <div class="spinner-grow text-primary"></div>
+    <div class="spinner-grow text-secondary"></div>
+    <div class="spinner-grow text-danger"></div>
+</div>
+<div class="row" *ngIf = 'loading === false'>
+    <div class="col-lg-8 offset-lg-2">
+        <div class="card" style="width: 25rem; margin: 0 auto;">
+            <img [src]="urlImage" alt="" class="card-im-top img-thumbnail">
+            <div class="card-body text-center">
+                <h5 class="card-title">{{ firstName }} {{ lastName }}</h5>
+                <ul class="list-group list-group flush">
+                    <li class="list-group-item">Correo: {{email}}</li>
+                    <li class="list-group-item">Telefono: {{phone}}</li>
+                    <li class="list-group-item">Genero: {{gender}}</li>
+                </ul>
+                <button class="btn btn-primary btn-block mt-3" style = 'width: 100%;' routerLink = '/dashboard'>VOLVER</button>
+            </div>
+        </div>       
+    </div>
+</div>

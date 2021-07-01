@@ -1,0 +1,10 @@
+<div class="row d-flex justify-content-center" *ngIf = 'loading === true'>
+    <div class="spinner-grow text-primary"></div>
+    <div class="spinner-grow text-secondary"></div>
+    <div class="spinner-grow text-danger"></div>
+</div>
+<div class="row">
+    <div *ngFor = 'let usuario of listUsuarios' class="col-lg-3" style="margin: 30px;">
+        <app-card-usuario [user] = 'usuario' ></app-card-usuario>
+    </div>
+</div>

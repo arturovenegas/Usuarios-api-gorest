@@ -1,0 +1,9 @@
+<div class="card" style="width: 18rem;">
+    <img [src]="imgUrl" alt="" class="card-img-top">
+    <div class="card-body">
+        <h5 class="card-title text-center">{{firstName}}</h5>
+        <p class="card-text text-center">{{email}}</p>
+        <p class="card-text text-center">Genero: {{genero}}</p>
+        <button class="btn btn-primary btn-block btn" style="width: 100%;" routerLink = 'usuario/{{ id }}'>Ver Más</button>
+    </div>
+</div>
